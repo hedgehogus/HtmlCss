@@ -1,0 +1,9 @@
+HyperText Marcup Language
+
+index.html
+name of the file . file extension
+
+Page title:     Recipe World
+Recipe Name:    Magic cake
+Section Name:   Ingredients
+Section Name:   Directions
