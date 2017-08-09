@@ -1,0 +1,27 @@
+/* the simplest is the type selector, and is just the tag name without <> brackets */
+
+/* a single selector can change multiple properties */
+
+p {
+    text-decoration: underline;
+    color:red;
+}
+
+/* a descendant selector can be used to select tags only if thy are children of another tag */
+
+ul li {
+    font-size: 24px;
+    color: green;
+}
+
+/* a pseudo-selector is a modifier that can be added to a selector to select*/
+/*a tag only when a certain condition has occured */
+
+a {
+ text-decoration: none; /*removes underline from all links on a page*/
+}
+
+a:hover {
+    text-decoration: underline;
+    color: darkred
+}
