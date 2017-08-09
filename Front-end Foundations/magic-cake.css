@@ -4,14 +4,18 @@
 
 p {
     text-decoration: underline;
-    color:red;
+    color:#CC2255;
 }
 
 /* a descendant selector can be used to select tags only if thy are children of another tag */
 
 ul li {
     font-size: 24px;
-    color: green;
+    color: #2255FF;
+    display: inline;
+    border: 2px dotted #BB99EE;
+    padding: 10px;
+    margin: 0 20px 0 20px;
 }
 
 /* a pseudo-selector is a modifier that can be added to a selector to select*/
@@ -23,11 +27,32 @@ a {
 
 a:hover {
     text-decoration: underline;
-    color: darkred
+    color: #770033;
 }
 
 /* the first-child pseudo-selector can be applied to narrow the amount of child tags selected*/
 
 ol li:first-child{
-    color:red;
+    color:#4433FF;
+}
+
+h2 {
+    padding-top: 6px;
+    padding-right: 3px;
+    padding-bottom: 0;
+    padding-left: 30px;
+    border: 6px;
+    border-style: solid;
+    border-color: #000055;
+    margin-top: 6px;
+    margin-left: 10px;
+    
+}
+
+/* or all at once in a clockwise order*/
+
+h2 {
+    padding: 6px 3px 0 30px;
+    border: 8px groove salmon;
+    margin: 10px 60px 10px 30px;
 }
