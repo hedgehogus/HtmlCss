@@ -22,13 +22,6 @@ h2 {
     font-size: 28px;
 }
 
-h3 {
-    margin: 15px 0 15px 0;
-    border-bottom: 1px solid #CCCCCC;
-    color: mediumseagreen;
-    padding-bottom: 3px;
-    font-size: 26px;
-}
 
 ul {
     padding: 0 0 0 50px;
@@ -43,10 +36,6 @@ ul li {
     font-size: 24px;
 }
 
-.nav li{
-    display: inline;
-    padding: 10px;
-}
 
 a:hover {
     text-decoration: underline;
@@ -54,5 +43,44 @@ a:hover {
 }
 
 a {
-    text-decoration: none;    
+    text-decoration: none;   
+    
+}
+
+h3 {
+    margin: 15px 0 15px 0;
+    border-bottom: 1px solid #CCCCCC;
+    color: mediumseagreen;
+    padding-bottom: 3px;
+    font-size: 26px;
+}
+.nav {
+    padding: 0;
+}
+.nav li{
+    display: inline;
+    padding: 10px;
+}
+.nav a {
+    color: #227766;
+}
+
+.recipes {
+    list-style-type:none; /*removes dots in list*/
+    padding: 0;
+}
+
+.recipes li{
+    border: 1px solid #b56663;
+    padding-left: 15px;
+    margin: 5px;
+}
+
+.recipes h3{
+    border-bottom: 0;
+}
+
+.recipes a {
+    color: #7facaa;
+    text-decoration: none;
 }
