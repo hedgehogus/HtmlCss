@@ -7,7 +7,7 @@ html, body, h1, h2, h3, p, ol, ul, li, a {
 }
 
 body{
-    padding:20px 20px 20px 20px;
+    padding:0 0 0 0;
 }
 
 h1 {
@@ -20,6 +20,7 @@ h2 {
     margin: 10px 0 20px 0;
     color: mediumseagreen;
     font-size: 28px;
+    text-align: center;
 }
 
 
@@ -56,10 +57,11 @@ h3 {
 }
 .nav {
     padding: 0;
+    text-align: center;
 }
 .nav li{
     display: inline;
-    padding: 10px;
+    padding-right: 10px;
 }
 .nav a {
     color: #227766;
@@ -83,4 +85,26 @@ h3 {
 .recipes a {
     color: #7facaa;
     text-decoration: none;
+}
+
+.header {
+    padding: 10px 10px 10px 10px;
+    background-color: #b56663;
+}
+
+.header a{
+    color: #ffffff;
+}
+
+.header h1{
+    color:#ffffff;
+    text-align:center;
+}
+
+.main-content{
+    width:800px;
+    padding: 20px 20px 20px 20px;
+    border: 1px solid #dddddd;
+    margin: 30px auto 0 auto;
+
 }
