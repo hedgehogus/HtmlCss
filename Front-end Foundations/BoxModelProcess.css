@@ -8,6 +8,11 @@ html, body, h1, h2, h3, p, ol, ul, li, a {
 
 body{
     padding:0 0 0 0;
+    background-color: #aaaaaa;
+    /* background-image: url(images/back2.jpg);
+    background-position: top left;
+    background-repeat: repeat; */
+    background: #aaaaaa url(images/back2.jpg) top left repeat;
 }
 
 h1 {
@@ -106,7 +111,7 @@ h3 {
     padding: 20px 20px 20px 20px;
     border: 1px solid #dddddd;
     margin: 30px auto 0 auto;
-
+    background-color: #FFf0f0;
 }
 
 .images {
@@ -128,4 +133,19 @@ img {
 .header img{
     display: block;
     margin: 0 auto 0 auto;
+}
+
+.featured-image {
+    width: 700px;
+    height: 500px;
+    background: #227766 url(images/home2.jpg) top left no-repeat;
+}
+
+.featured-image h3 {
+    margin:0;
+    background-color: #333333;
+    color:#ffffff;
+    padding: 10px 0 10px 15px;
+    font: 12pt/10pt sans-serif;;
+    text-transform: uppercase;
 }
