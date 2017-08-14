@@ -174,3 +174,27 @@ img {
     font-style: italic;
     text-transform: uppercase;
 }
+
+label, input, textarea {
+    display: block;
+    margin: 10px 0 10px 0;
+}
+
+input[type=text],input[type=password] {
+    width: 500px;
+    border: 2px solid #7facaa;
+    font-size:  24px;
+    padding: 7px;
+}
+
+textarea {
+    width: 500px;
+    height: 150px;
+    padding: 7px;
+    border: 2px solid #7facaa;
+    font-size:  24px;
+}
+
+input[type=checkbox], label[for=newsletter]{
+    display: inline;
+}
