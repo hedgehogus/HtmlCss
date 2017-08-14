@@ -4,6 +4,8 @@ html, body, h1, h2, h3, p, ol, ul, li, a {
     padding: 0;
     border: 0;
     margin: 0;
+    font-size:100%;
+    font:inherit;
 }
 
 body{
@@ -13,6 +15,7 @@ body{
     background-position: top left;
     background-repeat: repeat; */
     background: #aaaaaa url(images/back2.jpg) top left repeat;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 h1 {
@@ -26,6 +29,7 @@ h2 {
     color: mediumseagreen;
     font-size: 28px;
     text-align: center;
+    font-weight: bold;
 }
 
 
@@ -115,6 +119,10 @@ h3 {
     background-color: #FFf0f0;
 }
 
+.main-content p {
+    line-height: 36px;
+}
+
 .images {
     width: inherit;
     padding: 0 0 0 0;
@@ -156,4 +164,13 @@ img {
     height: 100px;
     width: 150px;
     padding: 10px 10px 0 0;
+}
+
+.footer p {
+    color: #aaaaaa;
+    text-align: center;
+    font-weight: bold;
+    font-size:12px;
+    font-style: italic;
+    text-transform: uppercase;
 }
