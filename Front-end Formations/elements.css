@@ -1,0 +1,35 @@
+body {
+    font-family: sans-serif;
+}
+
+section {
+    border: 4px dotted purple;    
+    margin: 20px;
+    padding-left: 20px;
+}
+
+header{
+    border: 2px solid green;
+    margin: 10px;
+    padding-left: 20px;
+    color: darkred;
+}
+
+footer {
+    border: 3px dashed darkblue;
+    padding-left: 20px;
+    margin: 5px;
+}
+
+aside {
+    border: 4px double yellowgreen;
+    padding-left: 20px;
+    margin: 5px;
+
+}
+
+nav{
+    border: 2px solid darkred;
+    padding-left: 10px;
+    margin: 5px;
+}
