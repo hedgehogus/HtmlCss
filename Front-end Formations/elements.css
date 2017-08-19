@@ -32,4 +32,21 @@ nav{
     border: 2px solid darkred;
     padding-left: 10px;
     margin: 5px;
+    width: 500px;
+}
+
+article{
+    border: 4px double blue;
+    color: blue;
+    padding-left: 20px;
+    margin: 5px;
+    width: 700px;
+}
+
+main{
+    border: 4px dotted blueviolet;
+    color: blueviolet;
+    padding-left: 20px;
+    margin: 5px;
+    width: 900px;
 }
