@@ -66,8 +66,23 @@
                     footer, header, or nav element</li>
             </ol>
         </main>
-        
+        <figure>
+            <p> the <b>figure</b> element represents a unit of content, optionally with a caption,
+                that is self-contained, that is typically referenced as a single unit
+                from the main flow of the document, and that can be moved away from
+                the main flow of the document without affecting the document meaning</p>
+            <figcaption>
+                The <b>figcaption</b> element represents a caption or legend for a figure
+            </figcaption>
+        </figure>
+        <h3> the <b>time</b> element represents either a time on a 24 hour clock,
+             or a precise date in the proleptic Gregorian calendar, optionally 
+             with a time and time-zone offset</h3>
+        <p><time>2013-09-16</time></p>
+        <p><time datetime="2013-09-16">09/16/2013</time></p>
+        <p>without the datetime attribute, content must be a valid date,time,or precis datetime</p>
        
+        <h1>EXAMPLE:</h1>
         <section>
             <header>
                 <h1>The header of the section</h1>
@@ -79,6 +94,11 @@
             <main> 
                 <h1>Main information</h1>
             </main>
+            <figure>
+                <p>figure</p>
+                <img src="image.jpg" alt="hedgehog">
+                <figcaption>this is the caption for the picture</figcaption>
+            </figure>
             <p>this is some information within the section</p>
             <article> 
                 <p>Some article</p>

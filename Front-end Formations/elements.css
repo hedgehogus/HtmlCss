@@ -50,3 +50,12 @@ main{
     margin: 5px;
     width: 900px;
 }
+
+figure{
+    border: 4px double darkgoldenrod;
+    color: darkorange;
+    padding-left: 20px;
+    margin: 5px;
+    width: 400px;
+    line-height: 25px;
+}
