@@ -70,5 +70,38 @@
             <label>Keygen</label>
             <label>Output</label>
         </form>
+
+        <h1>New form attributes</h1>
+        <form>
+            <label>Placeholder</label>
+            <label>allows you to specify a message that is shown inside the input,
+                hidden when the user starts typing, and then returns when the focuse is
+                lost on the input(when the input is blanck)</label>
+            <input type="text" value="hedgehog">
+            <input type="text" placeholder="hedgehog">
+            <label>Autofocus</label>
+            <label>will automatically focus the specified input 
+                when the is rendered</label>
+            <input type="text" placeholder="autofocus" autofocus>
+            <label>Autocomplete</label>
+            <label>Required</label>
+            <label>when the form is submitted, the user will be notified of an 
+                error if the field is left blank</label>
+            <input type="text" placeholder="required" required>
+            <input type="submit" value="Click to submit">
+            <label>Pattern</label>
+            <label>accepts a js regulsr expression that can be used to validate
+                a form field to match the pattern</label>
+            <input type="text" pattern="[0-9]{3}">
+            <label>List</label>
+            <label>Multiple</label>
+            <label>novalidate</label>
+            <label>formnovalidate</label>
+            <label>form</label>
+            <label>formaction</label>
+            <label>formenctype</label>
+            <label>formmethod</label>
+            <label>formtarget</label>           
+        </form>
     </body>
 </html>
