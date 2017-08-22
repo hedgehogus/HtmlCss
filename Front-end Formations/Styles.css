@@ -1,0 +1,11 @@
+p {
+    width:800px;
+    padding: 20px;
+    margin: 10px;
+    font-size: 27px;
+}
+
+.border-radius{
+    border: 5px double darkgreen;
+    border-radius: 20px;
+}
