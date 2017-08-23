@@ -29,7 +29,7 @@ div {
     height: 50px;
     width: 200px;
     border-radius: 50% 100% 50% 100%;
-    box-shadow:  1px 3px 5px  #555;
+    box-shadow:  1px 3px 5px  #555;   
    
 }
 
@@ -64,3 +64,23 @@ div {
      /* box-shadow: <offset-x> <offset-y> <blur-radius>  <color>  */
 }
 
+.back {
+    color: red;
+    height: 300px;
+    width: 200px;
+    background-image: url(background1.jpg), url(background2.jpg);
+    background-position: top left, center right;
+    background-repeat: no-repeat, no-repeat;
+    /* or in one line
+    background:
+        url(bg1.jpg) top left no-repeat,
+        url(bg2.jpg) center right no-repeat; */
+}
+
+.color{
+    color: rgba(244, 0, 0, 0.5);
+}
+
+.color2{
+    color: hsla(240, 90%, 70%, 0.6);
+}
