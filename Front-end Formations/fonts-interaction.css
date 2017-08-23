@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('OpenSansRegular-webfont.eot');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('OpenSansBold-webfont.eot');
+    font-style: normal;
+    font-weight: bold;
+}
+
+h1 {
+    font-family: 'OpenSansRegular', Helvetica, Arial, sans-serif;
+}
+p {
+    font-family: 'OpenSansBold';
+    font-weight: bold;
+}
+img {
+    display: block;
+}
+
+.translate{
+    transform: translate(300px,5px);
+}
+
+.rotate{
+    transform: rotate(45deg) scale(1.2 , 1.1);
+}
+
+.scale {
+    transform: translateX(400px)
+        scale(1.5);
+        transition: transform 1s ease-in;
+}
+
+
+.scale:hover{
+    transform: translateX(400px) scale(1);
+}
+
+.skew {
+    transform: skew(-20deg, 5deg) translateX(50px);
+    transition: transform 1s ease-in;
+}
+.skew:hover{
+     transform: skew(0, 0deg) translateX(50px);
+}
+
+div {
+    height: 50px;
+    width: 70px;
+    padding: 5px;
+}
+
+.element{
+    background-color: black;
+    color:white;    
+    transition: all 1s ease-in-out;
+    /* transition: <property> <duration> <timing-function> <delay> 
+    transition-property: background-color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.1s;
+    */
+}
+
+.element:hover{
+    background-color: blue; 
+    color: black;   
+}
