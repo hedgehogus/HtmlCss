@@ -30,7 +30,7 @@ div {
     width: 200px;
     border-radius: 50% 100% 50% 100%;
     box-shadow:  1px 3px 5px  #555;   
-   
+    background: radial-gradient(aqua, darkblue);
 }
 
 .box3 {
@@ -41,7 +41,7 @@ div {
     border-radius:5px 25px 25px 25px;
     box-shadow: 
         5px 5px 10px #000,
-        inset 1px 1px 20px #ff7788;
+        inset 1px 1px 20px #ff7788;    
 }
 
 .box4 {
@@ -50,7 +50,7 @@ div {
     width: 200px;
     border-radius: 50% 100% 50% 100%;
     box-shadow: -3px -2px 5px  #000;
-   
+    background: linear-gradient(to right, #fffbd5, #b20a2c);
 }
 
 .box-shadow{
@@ -77,10 +77,27 @@ div {
         url(bg2.jpg) center right no-repeat; */
 }
 
+.box-sizing{
+    background: radial-gradient(circle at top left, yellow, lightblue);
+
+}
 .color{
     color: rgba(244, 0, 0, 0.5);
 }
 
 .color2{
     color: hsla(240, 90%, 70%, 0.6);
+}
+
+.opacity {
+    background: #ff7788 url(background1.jpg) top left;
+    opacity: 0.45;
+}
+
+.lineargradient{
+    background: linear-gradient(to right, #fffbd5, #b20a2c);
+}
+
+.radialgradient{
+    background: radial-gradient(circle at center, lightcoral 0, lightblue, lightgreen 100%);
 }
