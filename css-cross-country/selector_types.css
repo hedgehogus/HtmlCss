@@ -1,0 +1,63 @@
+/* element selector */
+h1 {
+    color: #aba4ac;
+    margin-bottom: 10px;
+}
+
+/* class selector  */
+.intro {
+    color: #aba4ac;
+    margin-bottom: 10px;
+}
+
+/* id selector  */
+#header {
+    color: #aba4ac;
+    margin-bottom: 10px;
+}
+
+/* compound selector  */
+h1 #header {
+    color: #aba4ac;
+    margin-bottom: 10px;
+}
+
+/* style priority is determined by position in site:
+- external<link> ----- less priority
+- In the <head>
+- inline style attribute
+- using ! important ------ more priority  
+*/
+
+header {
+  background: #e0e2e6 !important;
+}
+
+/* FLOATING LEFT & RIGHT
+
+removes elements from the document flow and moves them to a specified edge
+Other content within the parent will wrap arounf floats
+
+float: left/right/none
+
+floated elements stack up to the parent edge? then move down to the next available edge
+*/
+
+.container {
+    height: 300px;
+    width: 500px;
+    background-color: #aadd99;
+}
+
+#floating {
+    height: 50px;
+    width: 50px;
+    float: right;
+    background-color: #aa0099;
+}
+
+#other {    
+    background-color: #00dd99;
+    text-align:center;
+    font-style: italic;
+}
