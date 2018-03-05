@@ -43,16 +43,25 @@ float: left/right/none
 floated elements stack up to the parent edge? then move down to the next available edge
 */
 
+/* clear - Устанавливает, с какой стороны элемента запрещено его обтекание другими элементами. 
+Если задано обтекание элемента с помощью свойства float, то clear отменяет 
+его действие для указанных сторон. */
+
 .container {
-    height: 300px;
-    width: 500px;
+    
+    width: 400px;    
     background-color: #aadd99;
 }
 
+/* .clear {
+    clear: both;
+} */
+
 #floating {
-    height: 50px;
-    width: 50px;
-    float: right;
+    height: 200px;
+    width: 100px;
+    float: left;
+    margin: 5px;    
     background-color: #aa0099;
 }
 
@@ -61,3 +70,43 @@ floated elements stack up to the parent edge? then move down to the next availab
     text-align:center;
     font-style: italic;
 }
+
+/* common float-clearing methods */
+
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+.group:after{
+    clear: both;
+}
+.group {
+    zoom:1;
+}
+
+/* selectoes can be nested to overrride parent properties: */
+
+.featured {
+    color: #0000ff;
+}
+
+#content p {
+    color: #000;
+}
+
+#content .featured {
+    color: red;
+}
+.featured p {
+    color: #080 ;
+}
+
+/* specificity - the priority of a selector 
+ - !important
+  0,0,0,0
+ - inline styles
+ - id selectors
+ - class selectors
+ - element selectors
+*/
