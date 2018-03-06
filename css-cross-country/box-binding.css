@@ -1,0 +1,54 @@
+.downhill {
+    border: 5px solid red;
+    padding-left: 10px;
+    padding-right: 5px;
+    width: 100px;
+    height: 70px;
+    overflow: auto;
+}
+/* 
+overflow - what we should do iff the content size is bigger then container
+(overflow-x & overflow-y)
+visible - the default value, allows content to extend beyond container boundaries
+/auto - adds a scrollbar as needed when content overflows
+/hidden - hides content that extends beyond the container
+/scroll */
+
+/* position:
+static - default value
+/relative
+/absolute
+/fixed - affixes element to a cpecific place in the window, where it will stay regardless of scrolling */
+
+sup {
+    font-size: 75%;
+    line-height: 0;
+    vertical-align: baseline;
+    position:relative;
+    top:  -0.5em;
+}
+
+article {
+    position: relative;
+}
+
+h3 {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.ski {
+    position:fixed;
+    right:10px;
+    top: 10px;
+}
+
+/* z-index - mannually adjusting overlap 
+elements must be positioned for z-index to take effect
+use relative if you're not interested in moving the object*/
+
+.ski,
+.sled{
+    z-index: 1;
+}
