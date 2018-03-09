@@ -37,12 +37,15 @@ ul li {
 
 #hedgemobile {
     display: inline-block;
-    background: url(image.jpg) no-repeat;
+    background: url(image.jpg) top right no-repeat;
     height: 300px;
     width: 400px;
 }
 
-/* how to crop images */
+/* how to crop images 
+
+http://clagnut.com/sandbox/imagetest
+*/
 
 .crop {
     display: inline-block;
@@ -60,5 +63,5 @@ ul li {
 
 .scalecrop img{
     height: auto;
-    width: 300px;
+    width: 100%;
 }
