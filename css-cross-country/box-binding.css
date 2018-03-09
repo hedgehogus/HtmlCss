@@ -81,3 +81,8 @@ margin, font, background, list-style, border*/
 .centered {
     text-align:center;
 }
+
+p {
+  margin: 0 0 10px 0;  
+  font: 14px/16px tahoma, arial, sans-serif;  
+}
