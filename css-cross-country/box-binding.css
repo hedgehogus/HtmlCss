@@ -52,3 +52,32 @@ use relative if you're not interested in moving the object*/
 .sled{
     z-index: 1;
 }
+
+/* shorthands
+top - right - bottom - left 
+margin, font, background, list-style, border*/
+
+.withmargin {
+    margin: 10px 15px 0 20px;
+}
+
+.sale {
+    /* float: left;
+    width: 100%; the same as */
+    display: block;
+    padding: 0 10px;
+    margin: 5px 0;
+    text-align: center;
+}
+
+/* inline-block - same as inline element but behave as a block element */
+
+/* centering a block-level element */
+.centered {
+    margin: 0 auto;
+}
+
+/* centering inline and inline-block elements */
+.centered {
+    text-align:center;
+}
