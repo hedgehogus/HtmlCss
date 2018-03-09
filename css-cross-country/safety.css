@@ -1,3 +1,64 @@
-.p{
-    display:block;
+/* protecting your layout 
+margins are collapsing
+there are only the biggest value
+
+collapsing margins will not occur when one or more block element has:
+- padding or border
+- relative or absolute positioning
+- a float left or right*/
+
+.header{
+    margin: 20px 0 40px 0;
+    background-color: lightblue;    
+}
+
+.feature {
+    margin:  20px 0 0 0;
+    background-color: lightcoral;
+    border: 2px dotted blue;
+}
+
+.body{
+    margin: 40px 0;
+    background-color: lightgreen;
+}
+
+.featured li {
+    font-style: italic;
+    font-size: 14px;
+    color: #fff;
+    margin: 5px 0;
+}
+
+ul li {
+    font-size: 12px;
+    margin: 3px 0;
+}
+
+#hedgemobile {
+    display: inline-block;
+    background: url(image.jpg) no-repeat;
+    height: 300px;
+    width: 400px;
+}
+
+/* how to crop images */
+
+.crop {
+    display: inline-block;
+    height: 200px;
+    width: 300px;
+    overflow: hidden;
+}
+
+.scalecrop{
+    display: inline-block;
+    height: 200px;
+    width: 300px;
+    overflow: hidden;
+}
+
+.scalecrop img{
+    height: auto;
+    width: 300px;
 }
