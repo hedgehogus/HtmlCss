@@ -66,3 +66,18 @@ https://meyerweb.com/eric/tools/css/reset/?utmr=http%3A%2F%2Fcampus.codeschool.c
     height: auto;
     width: 100%;
 }
+
+/* add descriptive text to image-replaced elements */
+
+.logo {
+    background: url(logo.png);
+    display: block;
+    height: 100px;
+    width: 200px;
+    text-indent: -9999px;
+}
+/* sprites */
+
+.logo:hover, .logo:focus {
+    background-position: 0 -100px;
+}
