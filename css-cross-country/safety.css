@@ -76,8 +76,34 @@ https://meyerweb.com/eric/tools/css/reset/?utmr=http%3A%2F%2Fcampus.codeschool.c
     width: 200px;
     text-indent: -9999px;
 }
-/* sprites */
+/* sprites 
+
+tools : sprite cow
+
+without sprites
+
+https://www.davidbcalhoun.com/2011/when-to-base64-encode-images-and-when-not-to/*/
 
 .logo:hover, .logo:focus {
+    background-position: 0 -100px;
+}
+
+.twitter, .github {
+    background: url(social.png);
+    display: block;
+    height: 100px;
+    width: 100px;
+    text-indent: -9999px;
+}
+
+.github {
+    background-position: -100px 0;
+}
+
+.github:hover, .github:focus{
+    background-position: -100px -100px;
+}
+
+.twitter:hover, .twitter:focus {
     background-position: 0 -100px;
 }
