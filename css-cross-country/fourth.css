@@ -1,0 +1,65 @@
+/* pseudo classes 
+
+:hover / :focus / :active / :visited
+
+:first-child/ :last-child / :only-child
+
+:nth-child() / :nth-of-type()
+
+
+https://css-tricks.com/pseudo-class-selectors/?utmr=http%3A%2F%2Fcampus.codeschool.com%2Fcourses%2Fcss-cross-country%2Flevel%2F8%2Fsection%2F1%2Fpseudo-sitzmark
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+
+
+Pseudo elements
+
+:before / :after
+:first-letter/ :first-line
+*/
+
+li{
+    border-bottom: 1px solid #aaa;
+}
+
+li:last-child {
+    border-bottom: 0;
+}
+
+li:nth-child(even){
+    background-color:#444245;
+}
+
+li:nth-child(odd){
+    background-color:#444245;
+}
+
+li:nth-child(2n+1){ /*odd numbers*/
+    background-color:#444245;
+}
+
+article p:last-child:after {
+    content: '\2744';
+}
+
+blockquote span {
+    background: url(quote.png);
+    display: block;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+/* or the same using pseudo elements*/
+
+blockquote:before {
+    content:'';
+    background: url(quote.png);
+    display: block;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
