@@ -1,0 +1,43 @@
+.item {
+    display: flex; /*block container*/
+}
+
+.item{
+    display:inline-flex; /*inline container*/
+}
+
+article{
+    border: 1px solid #555;
+    display: inline-flex;
+}
+
+h2,h3,h4 {
+    border: 1px solid #667;
+    padding: 5px;
+    margin: 5%;
+}
+
+/*grandchild elements do not become flex items*/
+
+.wraping{
+    height: 300px;
+    width: 300px;
+    display:flex;
+    flex-wrap: wrap; /*nowrap / wrap / wrap-reverse*/
+    flex-direction: column; /*row/ row-reverse/ column / column-reverse*/
+    overflow: auto;
+}
+
+/* When the screen is at least 500px, we'll want to use a new .media selector. */
+
+@media screen and (min-width: 500px) {
+    .media {
+        flex-wrap:nowrap;    
+    }
+    
+    .media-img-item {
+        width: 200px;
+    }
+    
+  }
+  
