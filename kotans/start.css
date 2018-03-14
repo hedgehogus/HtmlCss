@@ -49,3 +49,35 @@ https://www.w3schools.com/css/css_attribute_selectors.asp
 a[href]:empty::after{
     content: attr(href)
 }
+
+/* time units
+
+{
+    animation-duration: .5s;
+    animation-duration: 5000ms;
+}
+
+degrees 
+{
+    linear-gradient(0deg)
+} 
+
+
+sticky
+
+.gallery {
+    ...
+    scroll-snap-points-x:repeat(100%);
+    scroll-snap-type: mandatory;
+    scroll-snap-destination: 50% 50%;
+}
+
+blending
+blend modes
+overlay
+
+lost-grid
+
+stacking context(!)
+
+*/
