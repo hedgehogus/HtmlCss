@@ -11,10 +11,14 @@ article{
     display: inline-flex;
 }
 
-h2,h3,h4 {
+h2,h3,h4 {    
     border: 1px solid #667;
     padding: 5px;
-    margin: 5%;
+    margin: 10px;
+}
+
+h3 {
+    width: 50px;
 }
 
 /*grandchild elements do not become flex items*/
@@ -26,6 +30,8 @@ h2,h3,h4 {
     flex-wrap: wrap; /*nowrap / wrap / wrap-reverse*/
     flex-direction: column; /*row/ row-reverse/ column / column-reverse*/
     overflow: auto;
+    align-items: center;  /*flex-start/flex-end/center/baseline/stretch*/
+    justify-content: space-between; /* flex-start / flex-end/ center / space-between / space-around */
 }
 
 /* When the screen is at least 500px, we'll want to use a new .media selector. */
@@ -43,8 +49,19 @@ h2,h3,h4 {
 @media screen and (min-width: 375px){
     nav{
         display: flex;
+        /*main axis*/
         justify-content: flex-start; /* flex-start / flex-end/ center / space-between / space-around */
+        /*cross axis*/
+        align-items: flex-start; /*flex-start/flex-end/center/baseline/stretch*/
         vertical-align:top;
     }
+}
+
+.first-order{
+    order:-1;
+}
+
+.last-order{
+    order:1;
 }
   
