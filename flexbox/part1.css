@@ -14,24 +14,25 @@ article{
 h2,h3,h4 {    
     border: 1px solid #667;
     padding: 5px;
-    margin: 10px;
+    margin: 0;
 }
 
 h3 {
-    width: 50px;
+    flex-grow: 1;
+    flex-basis: 30%;
 }
 
 /*grandchild elements do not become flex items*/
 
 .wraping{
     height: 300px;
-    width: 300px;
+    width: 600px;
     display:flex;
     flex-wrap: wrap; /*nowrap / wrap / wrap-reverse*/
-    flex-direction: column; /*row/ row-reverse/ column / column-reverse*/
+    flex-direction: row; /*row/ row-reverse/ column / column-reverse*/
     overflow: auto;
     align-items: center;  /*flex-start/flex-end/center/baseline/stretch*/
-    justify-content: space-between; /* flex-start / flex-end/ center / space-between / space-around */
+    justify-content: center; /* flex-start / flex-end/ center / space-between / space-around */
 }
 
 /* When the screen is at least 500px, we'll want to use a new .media selector. */
@@ -50,13 +51,13 @@ h3 {
     nav{
         display: flex;
         /*main axis*/
-        justify-content: flex-start; /* flex-start / flex-end/ center / space-between / space-around */
+        justify-content:  space-around; /* flex-start / flex-end/ center / space-between / space-around */
         /*cross axis*/
         align-items: flex-start; /*flex-start/flex-end/center/baseline/stretch*/
         vertical-align:top;
     }
 }
-
+/* 
 .first-order{
     order:-1;
 }
@@ -64,4 +65,22 @@ h3 {
 .last-order{
     order:1;
 }
-  
+   */
+
+
+/* Used to specify the ratio of the space an item should fill in the main axis
+flex-grow: 0; - items dont grow beyond content size;
+flex-grow: 1; - items fills as much space as possible
+it accepts numbers and the default is 0;
+
+flex-shrink:0 - do not shrink
+flex-shrink:0 - do shrink (default);
+
+flex-basis
+the initial size of flex item - defaults to auto
+and currently supports css units
+%
+px
+em
+rem
+*/
