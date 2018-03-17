@@ -76,7 +76,7 @@ flex-grow: 1; - items fills as much space as possible
 it accepts numbers and the default is 0;
 
 flex-shrink:0 - do not shrink
-flex-shrink:0 - do shrink (default);
+flex-shrink:1 - do shrink (default);
 
 flex-basis
 the initial size of flex item - defaults to auto
@@ -87,7 +87,12 @@ em
 rem
 
 
-
 align-self: stretch/ flex-start/ flex-end/center /baseline
 
+
+
+shorthands:
+
+flex: 0(grow) 1(shrink) auto(basis);
+flex-flow: row(direction) nowrap;
 */
